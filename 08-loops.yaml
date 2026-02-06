@@ -1,0 +1,20 @@
+- name: Install multiple packages using a loop
+  hosts: frontend
+  become: yes
+
+  # vars:
+  #   required_packages:
+  #     - nginx
+  #     - postgresql
+  #     - git
+  #     - curl
+
+  tasks:
+    - name: Install each package one by one
+      ansible.builtin.package:
+        name: "{{ item }}"
+        state: installed
+      loop:
+      - mysql
+      - dnf
+      - nginx
