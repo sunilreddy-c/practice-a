@@ -9,3 +9,5 @@
     msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
 
    
+
+ 
