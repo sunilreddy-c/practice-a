@@ -1,0 +1,11 @@
+- name: calling vars from file 
+  hosts: local
+  connection: local
+  vars_file:
+  -course.yaml
+  tasks:
+  - name: calling vars from file 
+    and.builtin.debug:
+    msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+   
