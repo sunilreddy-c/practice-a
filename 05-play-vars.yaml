@@ -1,6 +1,6 @@
 - name: play level vars
   hosts: local
-  connection: local 
+  connection: local
   vars:
    trainer: sunil
    duration: 100hr
@@ -10,4 +10,5 @@
    - name: buit course information
      ansible.builtin.debug:
      msg: "hello {{ trainer }} , course duration {{ duration }} , palce is {{ bangalore }}"
+ 
 
